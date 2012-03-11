@@ -18,4 +18,10 @@ public class Main extends Activity {
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
     }
+
+    @Override
+    protected void onPause() {
+        PlayClip.release();
+        super.onPause();
+    }
 }
