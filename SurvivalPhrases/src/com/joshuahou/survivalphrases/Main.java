@@ -20,6 +20,12 @@ public class Main extends Activity {
     }
 
     @Override
+    protected void onResume() {
+        PlayClip.resume();
+        super.onResume();
+    }
+
+    @Override
     protected void onPause() {
         PlayClip.release();
         super.onPause();
