@@ -1,18 +1,20 @@
 package com.joshuahou.survivalphrases;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 public class ImageAdapter extends BaseAdapter {
     private Context context;
+    private Spinner spinner;
 
-    public ImageAdapter(Context context) {
+    public ImageAdapter(Context context, Spinner spinner) {
         this.context = context;
+        this.spinner = spinner;
     }
 
     @Override
@@ -47,25 +49,26 @@ public class ImageAdapter extends BaseAdapter {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PlayClip.play(context, soundIds[position]);
+                String language = spinner.getSelectedItem().toString();
+                PlayClip.play(context, language.toLowerCase() + "/" + soundIds[position]);
             }
         });
         return imageView;
     }
     
     private String[] soundIds = {
-            "english/atm.mp3",
-            "english/hotel.mp3",
-            "english/camera.mp3",
-            "english/mail.mp3",
-            "english/martini.mp3",
-            "english/nurse.mp3",
-            "english/plane.mp3",
-            "english/police.mp3",
-            "english/present.mp3",
-            "english/restaurant.mp3",
-            "english/taxi.mp3",
-            "english/restroom.mp3",
+            "atm.mp3",
+            "hotel.mp3",
+            "camera.mp3",
+            "mail.mp3",
+            "martini.mp3",
+            "nurse.mp3",
+            "plane.mp3",
+            "police.mp3",
+            "present.mp3",
+            "restaurant.mp3",
+            "taxi.mp3",
+            "restroom.mp3",
     };
 
     // references to our images
