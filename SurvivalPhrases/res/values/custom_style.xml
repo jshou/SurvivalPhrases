@@ -1,12 +1,12 @@
 <resources>
-    <style name="CustomWindowTitleBackground">
-        <item name="android:background">#FFFFFF</item>
-    </style>
+    <!--<style name="CustomWindowTitleBackground">-->
+        <!--<item name="android:background">#FFFFFF</item>-->
+    <!--</style>-->
 
-    <style name="CustomTheme" parent="android:Theme">
-        <item name="android:windowTitleSize">35dip</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
-        <item name="android:background">@android:color/white</item>
-    </style>
+    <!--<style name="CustomTheme" parent="android:Theme">-->
+        <!--<item name="android:windowTitleSize">35dip</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>-->
+        <!--<item name="android:background">@android:color/white</item>-->
+    <!--</style>-->
 </resources>
