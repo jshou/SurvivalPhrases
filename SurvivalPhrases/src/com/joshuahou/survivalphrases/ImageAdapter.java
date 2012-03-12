@@ -53,19 +53,19 @@ public class ImageAdapter extends BaseAdapter {
         return imageView;
     }
     
-    private Integer[] soundIds = {
-            R.raw.atm,
-            R.raw.hotel,
-            R.raw.camera,
-            R.raw.mail,
-            R.raw.martini,
-            R.raw.nurse,
-            R.raw.plane,
-            R.raw.police,
-            R.raw.present,
-            R.raw.restaurant,
-            R.raw.taxi,
-            R.raw.restroom,
+    private String[] soundIds = {
+            "english/atm.mp3",
+            "english/hotel.mp3",
+            "english/camera.mp3",
+            "english/mail.mp3",
+            "english/martini.mp3",
+            "english/nurse.mp3",
+            "english/plane.mp3",
+            "english/police.mp3",
+            "english/present.mp3",
+            "english/restaurant.mp3",
+            "english/taxi.mp3",
+            "english/restroom.mp3",
     };
 
     // references to our images
