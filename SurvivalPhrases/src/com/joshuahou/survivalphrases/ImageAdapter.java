@@ -3,6 +3,7 @@ package com.joshuahou.survivalphrases;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -11,10 +12,12 @@ import android.widget.Spinner;
 public class ImageAdapter extends BaseAdapter {
     private Context context;
     private Spinner spinner;
+    private int colWidth;
 
-    public ImageAdapter(Context context, Spinner spinner) {
+    public ImageAdapter(Context context, Spinner spinner, int colWidth) {
         this.context = context;
         this.spinner = spinner;
+        this.colWidth = colWidth;
     }
 
     @Override
@@ -38,7 +41,7 @@ public class ImageAdapter extends BaseAdapter {
         ImageView imageView;
         if (convertView == null) {  // if it's not recycled, initialize some attributes
             imageView = new ImageView(context);
-            imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+            imageView.setLayoutParams(new GridView.LayoutParams(colWidth, colWidth));
             imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
             imageView.setPadding(8, 8, 8, 8);
         } else {
