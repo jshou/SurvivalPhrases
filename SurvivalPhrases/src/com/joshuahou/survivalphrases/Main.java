@@ -24,7 +24,7 @@ public class Main extends Activity {
         spinner.setAdapter(adapter);
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
-        int colWidth = getWindowManager().getDefaultDisplay().getWidth() / 3 * 9 / 10;
+        int colWidth = getWindowManager().getDefaultDisplay().getWidth() / 3 * 85 / 100;
         gridview.setAdapter(new ImageAdapter(this, spinner, colWidth));
     }
 
