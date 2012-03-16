@@ -1,2 +1,4 @@
 out/*
 */gen/*
+SurvivalPhrases/bin/*
+SurvivalPhrases/proguard_logs/*
