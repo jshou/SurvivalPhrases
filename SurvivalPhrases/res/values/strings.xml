@@ -4,6 +4,7 @@
     <string name="language_prompt">Choose a language</string>
     <string-array name="language_array">
         <item>English</item>
+        <item>Italian</item>
         <item>Mandarin</item>
     </string-array>
 </resources>
