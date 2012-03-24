@@ -1,10 +1,8 @@
 package com.joshuahou.survivalphrases;
 
 import android.app.Activity;
+import android.media.AudioManager;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.Spinner;
@@ -16,6 +14,7 @@ public class Main extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
