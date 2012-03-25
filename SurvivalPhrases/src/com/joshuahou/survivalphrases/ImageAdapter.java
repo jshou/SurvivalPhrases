@@ -3,7 +3,6 @@ package com.joshuahou.survivalphrases;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
